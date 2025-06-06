@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForecastActivity">
+
+    <!-- City Title -->
+    <TextView
+        android:id="@+id/cityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_for"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/temperatureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: --°C"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/cityTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Min Temperature -->
+    <TextView
+        android:id="@+id/minTempView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Temp: --°C"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/temperatureView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Max Temperature -->
+    <TextView
+        android:id="@+id/maxTempView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Temp: --°C"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/minTempView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Humidity -->
+    <TextView
+        android:id="@+id/humidityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: --%"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/maxTempView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Wind Speed -->
+    <TextView
+        android:id="@+id/windSpeedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed: -- km/h"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/humidityView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Sunrise -->
+    <TextView
+        android:id="@+id/sunriseView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise: --:-- AM"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/windSpeedView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Sunset -->
+    <TextView
+        android:id="@+id/sunsetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset: --:-- PM"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/sunriseView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Condition -->
+    <TextView
+        android:id="@+id/conditionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition: --"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/sunsetView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Back to Home Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button_text"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/conditionView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

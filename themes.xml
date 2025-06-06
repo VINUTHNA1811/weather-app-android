@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ✅ Define Theme -->
+    <style name="Theme.WeatherApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>  <!-- Deep Purple -->
+        <item name="colorSecondary">#03DAC5</item>  <!-- Cyan -->
+        <item name="android:colorBackground">#F5F5F5</item>  <!-- Light Gray -->
+        <item name="android:textColorPrimary">#000000</item>  <!-- Black -->
+        <item name="android:textColorSecondary">#757575</item>  <!-- Gray -->
+    </style>
+
+</resources>

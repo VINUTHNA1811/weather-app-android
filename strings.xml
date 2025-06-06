@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="enter_city_name">Enter city name</string>
+    <string name="search_button">Search</string>
+
+    <string name="back_button_text">Back to Home</string>
+    <string name="city_title_text">Weather for</string>
+    <string name="weather_for">Weather for %1$s</string>
+
+    <string name="temp">Temperature: %1$s°C</string>
+    <string name="min_temp">Min Temperature: %1$s°C</string>
+    <string name="max_temp">Max Temperature: %1$s°C</string>
+    <string name="humidity">Humidity: %1$s%%</string>
+    <string name="wind_speed">Wind Speed: %1$s km/h</string>
+    <string name="condition">Condition: %1$s</string>
+    <string name="sunrise">Sunrise: %1$s</string>
+    <string name="sunset">Sunset: %1$s</string>
+
+    <string name="no_weather_data">No weather data available</string>
+    <string name="error_fetching_data">Error fetching data. Check your connection!</string>
+</resources>
