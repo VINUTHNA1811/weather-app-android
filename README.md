@@ -24,7 +24,7 @@ This repository contains:
 
 ## 🔧 Tech Stack
 
-- Kolin (Android)
+- Kotlin (Android)
 - Android SDK
 - XML Layouts
 - Weather API 
